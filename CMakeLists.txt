@@ -10,4 +10,13 @@ set(HEADER_FILES src/sdrplay.h src/mySocket.h src/error.h)
 
 add_executable(sdrserver ${SOURCE_FILES} ${HEADER_FILES})
 target_link_libraries(sdrserver pthread ${MIR_LIBRARY})
-install (TARGETS sdrserver DESTINATION bin)
+
+
+set(TEST_SOURCE_FILES src/test.cpp)
+set(TEST_HEADER_FILES )
+
+add_executable(sdrtest ${TEST_SOURCE_FILES} ${TEST_HEADER_FILES})
+target_link_libraries(sdrtest pthread ${MIR_LIBRARY})
+
+install (TARGETS sdrserver sdrtest DESTINATION bin)
+

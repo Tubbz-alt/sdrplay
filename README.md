@@ -19,6 +19,8 @@
 ## NOTES
  The SDRPlay libraries are compiled against a recent libusb - at least 1.0.18.  The one that ships with the Raspberry Pi is not new enough and will crash.  Suitable upgrades are at https://www.hoyle.me.uk/pi/ 
 
+ CMake for building requires libmirsdrapi-rsp. It is available at http://www.sdrplay.com/downloads/ . Have a look below SOFTWARE for API/HARDWARE DRIVER in the appropriate system tab.
+
   The server pretends to be an R820T - this enables gain setting but the values the R820T use don't really map to the SDRPlay, so there won't be the same results.
 
 ## OPTIONS
